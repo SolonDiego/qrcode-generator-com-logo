@@ -16,7 +16,7 @@ qr = qrcode.QRCode(
 qr.add_data(insta_url)
 qr.make(fit=True)
 
-qr_img = qr.make_image(back_color=(255,255,255), fill_color=(178,55,104))
+qr_img = qr.make_image(back_color=(255,255,255), fill_color=(178,55,104)) # Alterar a cor do QR Code
 
 # Abrir e redimencionar a logo
 logo = Image.open(logo_path)
