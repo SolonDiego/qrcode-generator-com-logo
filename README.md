@@ -24,17 +24,19 @@ Esse QR Code pode ser utilizado em materiais promocionais, embalagens, lojas fí
 
 ## 📁 Estrutura do Projeto
 
-.
-├── Sticker_Instagram_Logo_simple_compose.png # Logo do Instagram
-├── qrcode_instagram.png # QR Code gerado com a logo
+
+├── Sticker_Instagram_Logo_simple_compose.png # Logo do Instagram.  
+
+├── qrcode_instagram.png # QR Code gerado com a logo  
+
 └── gerador_qrcode.py # Script Python para gerar o QR Code
 
 ## 🚀 Como Executar
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/qr-lojao-rio-do-peixe.git
-   cd qr-lojao-rio-do-peixe
+   git clone https://github.com/SolonDiego/qrcode-generator-com-logo.git
+   cd qrcode-generator-com-logo
 
 2. Instale as dependências:
 pip install qrcode[pil]
