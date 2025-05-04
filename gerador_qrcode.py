@@ -4,6 +4,7 @@ from PIL import Image
 # Caminhos
 logo_path = "Sticker_Instagram_Logo_simple_compose.png"
 insta_url = "https://www.instagram.com/"
+output_path= "qrcode_instagram.png"
 
 # Geração de QR Code básico
 qr = qrcode.QRCode(
@@ -23,10 +24,12 @@ logo_size = 100
 logo.thumbnail((logo_size, logo_size))
 
 # Posição central para colar a logo
+qr_width, qr_height = qr_img.size
+logo_position = ((qr_width - logo_size) // 2 + 20, (qr_height - logo_size) // 2)
+qr_img.paste(logo, logo_position, mask=logo if logo.mode == 'RGBA' else None)
 
-
-logo.show()
-
+# Mostrar a imagem gerada
 qr_img.show()
 
-print(100//2)
+#Salvando o QR code com a logo como imagem
+qr_img.save(output_path)
