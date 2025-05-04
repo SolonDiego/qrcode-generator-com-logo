@@ -26,9 +26,7 @@ Esse QR Code pode ser utilizado em materiais promocionais, embalagens, lojas fí
 
 
 ├── Sticker_Instagram_Logo_simple_compose.png # Logo do Instagram.  
-
 ├── qrcode_instagram.png # QR Code gerado com a logo  
-
 └── gerador_qrcode.py # Script Python para gerar o QR Code
 
 ## 🚀 Como Executar
